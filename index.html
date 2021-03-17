@@ -9,7 +9,7 @@
 </head>
 <body>
  <style>
-     *{
+      *{
          padding:0;
          margin:0;
          box-sizing: border-box;
@@ -25,6 +25,7 @@
        .main h1{
            text-transform: uppercase;
            font-size:5rem;
+           font-style:italic;
        }
        .main h5{
            font-style:italic;
@@ -51,31 +52,37 @@
         margin:auto;
         border:2px solid black;
       }
-      .container{
-          column-count:4;
-          padding:5.5rem;
-          margin-top:-5rem;
-      }
+    
+    .story p{
+        column-count:3;
+        padding:5.5rem;
+    }
+           
+
+       
+      
       .container img{
           border:20px solid #ffff;
-      }
+          margin-left:62rem;
+          margin-top:-5.7rem;
+         }
 
       @media(max-width:768px){
-          .story p{
-
-              display: grid;
-              grid-template-columns:repeat(20,360px);
-              grid-template-rows: repeat(20,360px);
-              line-height: 2rem;
-              text-align: justify;
-              margin-left:-4.5rem;
-  
- 
          
-             }
-             .story img{
 
-                 margin-left:-140px;
+    .container p{
+
+          column-count:auto;
+          padding:1.5rem;
+          margin-left:0.4rem;
+           line-height: 2.3rem;
+          width:auto;
+ 
+     }
+                 .story img{
+
+                 margin-left:5rem;
+                 margin-top:0.8rem;
                
                }
                .main{
@@ -85,18 +92,24 @@
                    margin-left:-4rem;
                      
                }
+               .main h1{
+                   font-style:italic;
+               }
+               .main h4{
+                   margin-left:0.2rem;
+               }
                
                .main h6{
                    font-size:2.2rem;
                    padding:2.5rem;
-                   margin-left:1.2rem;
+                   margin-left:1.3rem;
                }
                 
                .main h5 {
                    font-size:1rem
                }
                .main hr{
-                   width:77%;
+                   width:74%;
                }
                
       }
